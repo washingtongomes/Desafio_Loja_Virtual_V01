@@ -27,14 +27,14 @@ export default class Product extends Component {
               <p className="align-self-center mb-0">
                 {title}
               </p>
-              <h5 className="text-blue font-italic mb-0">
+              <h3 className="text-blue font-italic mb-0">
                 <span className="mr-1"> R$ </span>
                 {price}
-              </h5>
+              </h3>
             </div>
           </div>
         </div>
-        <h3>Produtos </h3>
+        <h4>R$ {price} </h4>
       </ProdutoWrapper>
     );
   }
@@ -53,8 +53,8 @@ const ProdutoWrapper = styled.div`
 
 &:hover{
   .card{
-    border: 0.04rem solid rgba(0,0,0,0.5);
-    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5)
+    border: 0.08rem solid rgba(0,0,0,0.5);
+    box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.8)
   }
   .card-footer{
     background: rgba(247,247,247);
@@ -66,9 +66,9 @@ const ProdutoWrapper = styled.div`
   overflow:hidden;
 }
 .card-img-top{
-  transition: all 0.5s linear;
+  transition: all 1s linear;
 }
-.img-container: hover  .card-img-top{
+.img-container:hover  .card-img-top{
   transform:scale(1.2);
 }
 `

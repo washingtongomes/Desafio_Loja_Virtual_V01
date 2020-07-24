@@ -2,7 +2,7 @@
   export const lojaProdutos = [
   {
     id: 1,
-    title: "Pockemon - Azumari ",
+    title: "Pockemon  Azumari ",
     img: "img/azumari.png",
     price: 100,
     inCart: false,
@@ -11,7 +11,7 @@
   },
   {
     id: 2,
-    title: "Pockemon - celebi ",
+    title: "Pockemon   Celebi ",
     img: "img/celebi.png",
     price: 150,
     inCart: false,
@@ -21,7 +21,7 @@
 
   {
     id: 3,
-    title: "Pockemon - meloetta ",
+    title: "Pockemon  Meloetta ",
     img: "img/meloetta.png",
     price: 120,
     inCart: false,
@@ -31,7 +31,7 @@
  
 {
 id: 4,
-title: "Pockemon - snivy ",
+title: "Pockemon  Snivy ",
 img: "img/snivy.png",
 price: 200,
 inCart: false,
@@ -40,7 +40,7 @@ total: 0
 },
 {
 id: 5,
-title: "Pockemon - virizion ",
+title: "Pockemon  Virizion ",
 img: "img/virizion.png",
 price: 180,
 inCart: false,
@@ -49,7 +49,9 @@ total: 0
 }
 ];
 
-export const detalhesProduto = {
+export const detalhesProduto =
+
+{
   id: 1 ,
   title: "Pockemon - Azumari ",
   img: "img/azumari.png",
@@ -58,4 +60,4 @@ export const detalhesProduto = {
   count: 0,
   total: 0
 
-};
+}

@@ -10,7 +10,7 @@ class ProdutoProvider extends Component{
   handleDetalhe = ( ) =>{
     console.log("Legal! detalhes");
   };
-
+ 
   addToCarrinho = () =>{
     console.log("Pagina carrinho...!");
   };
