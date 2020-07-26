@@ -6,6 +6,7 @@
   --lightGreen: #54b9a3;
   --mainWhite: white;
   --lightGreen2: #16866e;
+  --lightRed: #e46428;
 
 }
 body{
@@ -18,7 +19,7 @@ background-color: var(--mainWhite);
   text-transform: uppercase;
 }
 .text-blue{
-  color: var(--mainWhite);
+  color: var(--lightGreen2);
 }
 
 .text-bright{
