@@ -6,7 +6,11 @@ class ProdutoProvider extends Component {
   state = {
     products: [],
     detalhesProduto: detalhesProduto,
-    cart: []
+    cart: lojaProdutos,
+    cartSubtotal:0,
+    cartImposto:0,
+    cartTotal:0
+
   };
   componentDidMount() {
     this.setProducts();
@@ -50,12 +54,33 @@ this.setState(() =>{
 
 };
 
+incremento = (id)=>{
+  console.log("Inserindo produtos carrinho");
+};
+
+descremento = (id)=>{
+  console.log("Retirando produtos carrinho");
+};
+removerItem = (id)=>{
+  console.log("Remover produtos carrinho");
+};
+limparCarrinho = (id)=>{
+  console.log("Limpar produtos carrinho");
+};
+
   render() {
     return (
       <ProdutoContext.Provider value={{
         ...this.state,
         handleDetalhe: this.handleDetalhe,
-        addToCarrinho: this.addToCarrinho
+        addToCarrinho: this.addToCarrinho,
+        incremento: this.incremento,
+        descremento: this.descremento,
+        removerItem: this.removerItem,
+        limparCarrinho:this.limparCarrinho
+
+
+
       }}>
         {this.props.children}
       </ProdutoContext.Provider>

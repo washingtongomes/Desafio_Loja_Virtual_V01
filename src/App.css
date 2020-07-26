@@ -10,8 +10,9 @@
 
 }
 body{
-  font-family: "osvwald", sans-serif ;
-background-color: var(--mainWhite);
+font-family: "oswald", sans-serif !important;
+background-color: var(--mainWhite)!important;
+color: var(--mainDark)!important;
 }
 .text-title{
   font-family: "Roboto Condensed", cursive;
@@ -24,4 +25,26 @@ background-color: var(--mainWhite);
 
 .text-bright{
   color: var(--lightBlue);
+}
+
+.btn-black{
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem!important;
+  color: var(--mainDark);
+  border-radius: 10px!important;
+  border: 0.1rem solid var(--lightRed)!important; 
+  
+  
+}
+.btn-black:hover{
+  background: var(--mainYellow)!important;
+color: var(--lightRed)!important;
+}
+
+.cart-icon{
+cursor: pointer;
+font-size: 1.2rem;
+color: var(--mainYellow);
+  
 }
