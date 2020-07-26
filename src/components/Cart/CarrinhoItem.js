@@ -15,21 +15,28 @@ export default function CarrinhoItem({ item, value }) {
           <br></br> R$: {price}
         </h5>
         <h4 className=""> Quantidade:  {count}  </h4>
-           <h5 className=""> Total:  {total}  </h5>
+          <h5 className=""> Valor Total :  {total}  </h5>
+          <h5 className="">  Total Items :  {total}  </h5>
 
             
         <div className="col-10 mx-auto col-lg-2 my-2 my-lg-0">
         <div className="d-flex justify-content-center"> <div>
          <div className="btn btn-black mx-1" onClick={() => descremento(id)}>
-             - </div>
+             -  </div>
         <div className="btn btn-black mx-1" onClick={() => incremento(id)}>
-            + </div>
+            +  </div>
 
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div className="col-10 mx-auto col-lg-2">
+    <div className="cart-icon" onClick={() => removerItem(id)}>
+    <i className="fas fa-trash" />
+ 
+        </div>
+        </div>
     </div>
     
   
