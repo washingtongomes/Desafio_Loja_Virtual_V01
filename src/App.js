@@ -9,6 +9,7 @@ import ProductList from "./components/ProductList";
 import Details from "./components/Details";
 import Cart from "./components/Cart/Cart";
 import Default from "./components/Default";
+import Finalisa from "./components/Finalisa";
 
 class App extends Component {
   render() {
@@ -20,8 +21,15 @@ class App extends Component {
           <Route path="/details" component={Details} />
           <Route path="/cart" component={Cart} />
           <Route component ={Default} />
+     
         </Switch>
+
+        <Switch>
+        <Route exact path="/finalisa" component={Finalisa} />
+        </Switch>
+        
       </React.Fragment>
+      
     );
   }
   }

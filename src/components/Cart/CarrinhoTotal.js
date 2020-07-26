@@ -13,6 +13,12 @@ export default function CarrinhoTotal({ value }) {
                                          voltar
                                     </button>
                                 </Link>
+
+                                <Link to="/finalisa">
+                                   <button className="btn btn-outline-danger text-uppercase mb-3 px-5 ">
+                                         Finalizar
+                                    </button>
+                                </Link>
                              <div >
                         </div>
                      </div>
