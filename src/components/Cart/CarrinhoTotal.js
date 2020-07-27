@@ -5,25 +5,20 @@ export default function CarrinhoTotal({ value }) {
       const { cartSubtotal, cartTotal, cartImposto } = value;
      return (
            <React.Fragment>
-                <div className=" container">  
-                   <div className="row"  >  
-                        <div className="col-10 mt-2 ml--5-5 ml-md-auto col-5m-8 text-capitalize text-right">  
-                             <Link to="/">
+
+                                   <div className="btn-fin01">
+                                   <Link to="/">
                                    <button className="btn btn-outline-danger text-uppercase mb-3 px-5 ">
                                          voltar
                                     </button>
-                                </Link>
+                                   </Link>
 
-                                <Link to="/finalisa">
+                                   <Link to="/finaliza">
                                    <button className="btn btn-outline-danger text-uppercase mb-3 px-5 ">
                                          Finalizar
                                     </button>
-                                </Link>
-                             <div >
-                        </div>
-                     </div>
-                     </div>
-                     </div>
+                                    </Link>
+                                </div>
            </React.Fragment>
   );
 }

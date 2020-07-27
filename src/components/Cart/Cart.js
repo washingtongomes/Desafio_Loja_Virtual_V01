@@ -9,7 +9,7 @@ import CarrinhoTotal from "./CarrinhoTotal";
 export default class Cart extends Component {
   render() {
     return (
-      <section >
+      <section className="section" >
         <ProdutoConsumer>
           {value => {
             const { cart } = value;
