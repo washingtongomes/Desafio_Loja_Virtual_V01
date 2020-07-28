@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { Switch, Route } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
@@ -22,15 +22,15 @@ class App extends Component {
           <Route exact path = "/" component={ ProductList } />
           <Route path="/details" component={Details} />
           <Route path="/cart" component={Cart} />
-          <Route path="/fim" component={Fim} />
           <Route path="/modal" component={Modal} />
-
+          <Route exact path="/fim" component={Fim} />
 
           <Route component ={Default} />
         </Switch>
-              
+
       </React.Fragment>
-      
+              
+
     );
   }
   }

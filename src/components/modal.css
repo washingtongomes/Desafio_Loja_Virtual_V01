@@ -1,0 +1,24 @@
+.modal-container{
+
+  
+  width: 40vw;
+  height: 30vw;
+  background: rgba(0,0,0,.5) ;
+  position: absolute;
+  top: 100px;
+  left: 350px;
+  z-index: 2000;
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  border: 10px solid rgb(112, 187, 177);
+
+
+}
+
+.modal{
+  background: white;
+  width: 30%;
+  min-width: 200px;
+  border: 10px solid;
+}

@@ -27,7 +27,7 @@ export default class Cart extends Component {
                       </ButtonVoltar>
                     </Link>
                            
-                    <Link to="/modal">
+                    <Link to="/fim">
                       <ButtonVoltar onClick={()=>{
                           value.addToCarrinho(id)
                       } }>
