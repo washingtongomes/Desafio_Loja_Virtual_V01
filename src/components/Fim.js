@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { ButtonVoltar } from "./Button";
 import "./modal.css";
 
-export default class Details extends Component {
+export default class Fim extends Component {
   render() {
     return (
       < ProdutoConsumer >

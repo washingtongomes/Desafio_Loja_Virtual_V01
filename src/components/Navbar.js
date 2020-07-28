@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import logo from "../cart.png";
-import styled from "styled-components";
 import {ButtonContainer} from "./Button";
 
 export default class Navbar extends Component {
@@ -14,8 +13,8 @@ export default class Navbar extends Component {
         <ul className="navbar-nav align-items-center ">
           <li className="nav-item ml -5">
             
-            <Link to="/" className="nav-link align-left">
-              link Produtos
+            <Link to="/" className="nav-link align-left text-white">
+              <b>Link Tela Produtos</b>
             </Link>
           </li>
         </ul>

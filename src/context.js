@@ -6,10 +6,7 @@ class ProdutoProvider extends Component {
   state = {
     products: [],
     detalhesProduto: detalhesProduto,
-    cart:  [],
-    cartSubtotal:0,
-    cartImposto:0,
-    cartTotal:0
+    cart: [],
 
   };
   componentDidMount() {
@@ -26,48 +23,49 @@ class ProdutoProvider extends Component {
       return { products: tempProducts };
     });
   };
-pegarItem = id=>{
-  const product = this.state.products.find(item=>item.id ===id);
-  return product;
-};
-handleDetalhe = id => {
-  const product = this.pegarItem(id);
-    this.setState(()=>{
-      return {detalhesProduto:product}
+  pegarItem = id => {
+    const product = this.state.products.find(item => item.id === id);
+    return product;
+  };
+  handleDetalhe = id => {
+    const product = this.pegarItem(id);
+    this.setState(() => {
+      return { detalhesProduto: product }
     });
-};
+  };
 
-addToCarrinho = id=> {
-let tempProducts = [...this.state.products];
-const index = tempProducts.indexOf(this.pegarItem(id));
-const product = tempProducts[index];
-product.inCart = true;
-product.count=1;
-const price = product.price;
-product.total = price;
-this.setState(() =>{
-  return {product:tempProducts, cart:[...this.state.cart]}
-}, 
-()=>{console.log(this.state);
-}
-);
+  addToCarrinho = id => {
+    let tempProducts = [...this.state.products];
+    const index = tempProducts.indexOf(this.pegarItem(id));
+    const product = tempProducts[index];
+    product.inCart = true;
+    product.count = 1;
+    const price = product.price;
+    product.total = price;
+    this.setState(() => {
+      return { product: tempProducts, cart: [...this.state.cart] }
+    },
+      () => {
+        console.log(this.state);
+      }
+    );
 
-};
+  };
 
-incremento = (id)=>{
-  console.log("Inserindo produtos carrinho");
+  incremento = (id) => {
+    console.log("Inserindo produtos carrinho");
 
-};
+  };
 
-descremento = (id)=>{
-  console.log("Retirando produtos carrinho");
-};
-removerItem = (id)=>{
-  console.log("Remover produtos carrinho");
-};
-limparCarrinho = (id)=>{
-  console.log("Limpar produtos carrinho");
-};
+  descremento = (id) => {
+    console.log("Retirando produtos carrinho");
+  };
+  removerItem = (id) => {
+    console.log("Remover produtos carrinho");
+  };
+  limparCarrinho = (id) => {
+    console.log("Limpar produtos carrinho");
+  };
 
   render() {
     return (
@@ -78,7 +76,7 @@ limparCarrinho = (id)=>{
         incremento: this.incremento,
         descremento: this.descremento,
         removerItem: this.removerItem,
-        limparCarrinho:this.limparCarrinho
+        limparCarrinho: this.limparCarrinho
 
 
 

@@ -8,7 +8,7 @@ export default class Details extends Component {
     return (
       < ProdutoConsumer >
         {value => {
-          const { id, title, img, price, inCart } =
+          const { id, title, img, price } =
             value.detalhesProduto;
           return (
 
