@@ -27,6 +27,7 @@ export default class Details extends Component {
                         Voltar
                       </ButtonVoltar>
                     </Link>
+                    
                            
                     <Link to="/cart">
                       <ButtonVoltar onClick={()=>{
