@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import { ProdutoConsumer } from "../context";
-import { Link } from "react-router-dom";
-import { ButtonVoltar } from "./Button";
 
 export default class Details extends Component {
   render() {
