@@ -6,7 +6,7 @@ class ProdutoProvider extends Component {
   state = {
     products: [],
     detalhesProduto: detalhesProduto,
-    cart: lojaProdutos,
+    cart:  [],
     cartSubtotal:0,
     cartImposto:0,
     cartTotal:0
@@ -56,6 +56,7 @@ this.setState(() =>{
 
 incremento = (id)=>{
   console.log("Inserindo produtos carrinho");
+
 };
 
 descremento = (id)=>{

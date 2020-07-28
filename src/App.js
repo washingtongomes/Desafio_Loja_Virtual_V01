@@ -9,7 +9,9 @@ import ProductList from "./components/ProductList";
 import Details from "./components/Details";
 import Cart from "./components/Cart/Cart";
 import Default from "./components/Default";
-import Finaliza from "./components/Finaliza";
+import Fim from "./components/Fim";
+import Modal from "./components/Modal";
+
 
 class App extends Component {
   render() {
@@ -20,14 +22,13 @@ class App extends Component {
           <Route exact path = "/" component={ ProductList } />
           <Route path="/details" component={Details} />
           <Route path="/cart" component={Cart} />
-          <Route component ={Default} />
-     
-        </Switch>
+          <Route path="/fim" component={Fim} />
+          <Route path="/modal" component={Modal} />
 
-        <Switch>
-        <Route exact path="/finaliza" component={Finaliza} />
+
+          <Route component ={Default} />
         </Switch>
-        
+              
       </React.Fragment>
       
     );

@@ -8,33 +8,22 @@ export default class Details extends Component {
     return (
       < ProdutoConsumer >
         {value => {
-          const { id, title, img, price, inCart } =
+          const { id, title, img, price} =
             value.detalhesProduto;
           return (
 
             <div className="container py-5">
               <div className="row">
                 <div className=" col-10 mx-auto text-center text-slanted text-blue my-5">
-                <h2>Detalhes do Produto...</h2>
-
-                  <h4>{title}</h4>
-                  <img src={img} className=" img-fluid" alt="product" />
+                  <h4>Codigo: {id}</h4>
+                  <h4>Descrição: {title}</h4>
                   <h5 className="text-danger">
-                    <br></br> R$: {price}
+                    <br></br> Valor R$: {price}
                   </h5>
-                    <Link to="/">
-                      <ButtonVoltar>
-                        Voltar
-                      </ButtonVoltar>
-                    </Link>
-                           
-                    <Link to="/cart">
-                      <ButtonVoltar onClick={()=>{
-                          value.addToCarrinho(id)
-                      } }>
-                          Comprar
-                      </ButtonVoltar>
-                    </Link>
+                  <h1> <b className="text-danger">COMPRA REALIZADA COM SUCESSO ! ! !</b></h1>
+
+                  <img src={img} className=" img-fluid" alt="product" />
+                    
                         </div>
                   </div>
                 </div>
