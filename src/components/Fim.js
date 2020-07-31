@@ -12,24 +12,22 @@ export default class Fim extends Component {
           const { id, title, img, price } =
             value.detalhesProduto;
           return (
-            <div id=" modal-promocao" className="modal-container">
-
-              <div className="row">
-                <div className=" col-10 mx-auto text-center text-slanted text-blue my-5">
-                  <h4 className="text-white"> Parabéns... ! </h4>
-                  <h4 className="text-white">{title}</h4>
-                  <img src={img} className=" img-fluid" alt="product" />
-                  <h5 className="text-danger">
+            <div id="modal-promocao" className="container py-5">
+                <div className="mt-auto">
+                  <h4 className="text-white ml-2 "> Parabéns... ! </h4>
+                  <h4 className="text-white ml-2">{title}</h4>
+                  <img src={img} className="flex-column" alt="product" />
+                  <h5 className=" text-sm-left text-danger">
                     <br></br> R$: {price}
                   </h5>
 
-                  <Link to="/">
+                  <Link to="/" className="btnLink">
                     <ButtonVoltar>
                       Inicio
                       </ButtonVoltar>
                   </Link>
 
-                  <Link to="/modal">
+                  <Link to="/modal"  className="btnLink2">
                     <ButtonVoltar onClick={() => {
                       value.addToCarrinho(id)
                     }}>
@@ -37,8 +35,7 @@ export default class Fim extends Component {
                       </ButtonVoltar>
                   </Link>
                 </div>
-              </div>
-            </div>
+                </div>
           )
         }}
       </ProdutoConsumer>
